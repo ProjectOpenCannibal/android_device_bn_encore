@@ -63,13 +63,22 @@ int resY=600;		//Value obtained from function 'gr_fb_height()'
 	only the buttons are active instead of the full screen; set to 0
 	for full screen and debugging
  */
-int touchY=350;
+int touchY=0;
 
 /*
 	define a storage limit for backup requirements, we recommend setting
 	this to something appropriate to your device
  */
 int minimum_storage=512;
+
+// define what line to draw the battery indicator on
+int BATT_LINE=29;
+// define the screen position of the battery indicator
+int BATT_POS=LEFT_ALIGN;
+// define what line to draw the clock on
+int TIME_LINE=30;
+// define the screen position of the clock
+int TIME_POS=LEFT_ALIGN;
 
 char* MENU_HEADERS[] = { NULL };
 

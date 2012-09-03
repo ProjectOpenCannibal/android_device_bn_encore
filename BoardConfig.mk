@@ -36,6 +36,7 @@ BOARD_RECOVERY_IGNORE_BOOTABLES := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/bn/encore/recovery/default_recovery_ui.c
 TARGET_RECOVERY_PRE_COMMAND := "dd if=/dev/zero of=/rom/bcb bs=64 count=1 > /dev/null 2>&1 ; echo 'recovery' >> /rom/bcb ; sync"
 RECOVERY_BUILD_IN_LANDSCAPE := true
+BOARD_TS_MAX_ROWS := 27
 
 BOARD_USES_GENERIC_AUDIO := false
 
